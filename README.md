@@ -1,19 +1,14 @@
 <div align="center">
 
-<img src="icons/icon128.png" width="80" alt="WebCopyyy">
-
 # WebCopyyy
 
 **Break free from copy restrictions. Unlock, copy, and export any webpage.**
+<br><br>
+
+<img src="https://github.com/rif-x43/WebCopyyy/blob/main/WebCopyyy_v1.0.0/draft/WebCopyyy_icon.png" width="512" alt="WebCopyyy">
 
 <br>
-
-[![Chrome](https://img.shields.io/badge/Chrome-Extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](https://developer.chrome.com/docs/extensions/)
-[![Manifest V3](https://img.shields.io/badge/Manifest-V3-34A853?style=for-the-badge&logo=google&logoColor=white)](https://developer.chrome.com/docs/extensions/mv3/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![License](https://img.shields.io/badge/License-MIT-A78BFA?style=for-the-badge)](LICENSE)
-
-<br>
+<br><hr>
 
 *A premium Chrome extension that removes copy/paste restrictions, re-enables right-click and text selection, and lets you export page content as clean formatted text — ready for Google Docs, Word, or anywhere.*
 
@@ -41,7 +36,7 @@
 
 ### 📸 Preview
 
-<img src="draft/demo.png" width="340" alt="WebCopyyy Extension Popup" style="border-radius: 16px;">
+<img src="https://github.com/rif-x43/WebCopyyy/blob/main/WebCopyyy_v1.0.0/draft/demo.png" width="340" alt="WebCopyyy Extension Popup" style="border-radius: 16px;">
 
 <sub>Dark-themed popup with glassmorphism UI — auto-detects page restrictions</sub>
 
@@ -209,13 +204,13 @@ If **no restrictions are detected**, the toggle shows _"No Restrictions — This
 
 ## 📄 License
 
-MIT © [reusRIFX](https://github.com/reusRIFX)
+MIT © [rif-x43](https://github.com/rif-x43)
 
 ---
 
 <div align="center">
 
-**Built with 🤍 by [reusRIFX](https://github.com/rif-x43)**
+**Built with 🤍 by [rif-x43](https://github.com/rif-x43)**
 
 <sub>If WebCopyyy helped you, consider giving it a ⭐</sub>
 
