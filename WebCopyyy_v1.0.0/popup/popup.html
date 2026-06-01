@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=380, initial-scale=1.0">
+  <title>WebCopyyy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup-shell">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="popup-container">
+      <!-- Header -->
+      <header class="header">
+        <div class="brand">
+          <!-- Notepad-style logo matching the app icon -->
+          <div class="brand-mark">
+            <svg viewBox="0 0 28 28" fill="none">
+              <!-- Back page (dark) -->
+              <rect x="3" y="5" width="18" height="20" rx="2.5" fill="#3a3a4a"/>
+              <!-- Front page (white, with curl) -->
+              <rect x="7" y="2" width="18" height="20" rx="2.5" fill="#e8e8ec"/>
+              <!-- Lined rules -->
+              <line x1="10" y1="7" x2="22" y2="7" stroke="#c8c8d0" stroke-width="0.7"/>
+              <line x1="10" y1="10.5" x2="22" y2="10.5" stroke="#c8c8d0" stroke-width="0.7"/>
+              <line x1="10" y1="14" x2="22" y2="14" stroke="#c8c8d0" stroke-width="0.7"/>
+              <line x1="10" y1="17.5" x2="19" y2="17.5" stroke="#c8c8d0" stroke-width="0.7"/>
+              <!-- Page curl -->
+              <path d="M25 16 L25 22 Q25 22.5 24.5 22 L19 17 Q18.5 16.5 19 16.5 L25 16Z" fill="#d0d0d8"/>
+              <path d="M25 16 Q23 18 19 17" stroke="#b8b8c0" stroke-width="0.5" fill="none"/>
+            </svg>
+          </div>
+          <div class="brand-info">
+            <h1 class="brand-name">Web<span>Copyyy</span></h1>
+            <div class="brand-tagline">Unlock · Copy · Export</div>
+          </div>
+        </div>
+      </header>
+
+      <div class="divider-glow"></div>
+
+      <!-- Unlock Toggle -->
+      <section class="toggle-section">
+        <div class="toggle-row">
+          <div class="toggle-info">
+            <div class="toggle-label" id="toggleLabel">Page Locked</div>
+            <div class="toggle-hint" id="toggleHint">Enable copying & right-click</div>
+          </div>
+          <button class="toggle-switch" id="unlockToggle" role="switch" aria-checked="false" title="Toggle page unlock">
+            <span class="toggle-track">
+              <span class="toggle-thumb">
+                <svg class="thumb-icon icon-lock" viewBox="0 0 16 16" fill="none">
+                  <rect x="3" y="7" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                  <path d="M5 7V5C5 3.34 6.34 2 8 2C9.66 2 11 3.34 11 5V7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+                <svg class="thumb-icon icon-unlock" viewBox="0 0 16 16" fill="none">
+                  <rect x="3" y="7" width="10" height="7" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+                  <path d="M5 7V5C5 3.34 6.34 2 8 2C9.38 2 10.56 2.97 10.9 4.25" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                </svg>
+              </span>
+            </span>
+          </button>
+        </div>
+        <div class="toggle-status" id="toggleStatus"></div>
+      </section>
+
+      <div class="divider-thin"></div>
+
+      <!-- Feature Buttons -->
+      <section class="features">
+        <!-- Copy Formatted -->
+        <button class="feat-btn" id="copyFormattedBtn" title="Copy page content as rich formatted text to clipboard">
+          <div class="feat-icon feat-icon-copy">
+            <svg viewBox="0 0 18 18" fill="none">
+              <rect x="5.5" y="4" width="9" height="11" rx="1.5" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M3.5 12.5V3.5C3.5 2.67 4.17 2 5 2H11" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M8 8H12M8 10.5H11" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="feat-text">
+            <div class="feat-title">Copy Formatted</div>
+            <div class="feat-desc">Rich text to clipboard</div>
+          </div>
+          <div class="feat-badge">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M4 7H10M10 7L7.5 4.5M10 7L7.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </button>
+
+        <!-- Export to Google Docs -->
+        <button class="feat-btn" id="exportDocsBtn" title="Copy formatted content and open a new Google Doc to paste into">
+          <div class="feat-icon feat-icon-docs">
+            <svg viewBox="0 0 18 18" fill="none">
+              <rect x="3" y="2" width="12" height="14" rx="2" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M6 6H12M6 8.5H12M6 11H10" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+              <circle cx="14" cy="14" r="3.5" fill="#4285f4" stroke="#1a1a2e" stroke-width="0.8"/>
+              <path d="M13 13H15M13 14.5H14.5" stroke="white" stroke-width="0.7" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="feat-text">
+            <div class="feat-title">Export to Docs</div>
+            <div class="feat-desc">Open in Google Docs</div>
+          </div>
+          <div class="feat-badge">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M4 7H10M10 7L7.5 4.5M10 7L7.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </button>
+
+        <!-- Save Page Copy (existing clone feature) -->
+        <button class="feat-btn" id="cloneBtn" title="Download a full copy of this page as an HTML file">
+          <div class="feat-icon feat-icon-save">
+            <svg viewBox="0 0 18 18" fill="none">
+              <path d="M9 3V12M9 12L6 9M9 12L12 9" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M3 14H15" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="feat-text">
+            <div class="feat-title">Save Page Copy</div>
+            <div class="feat-desc">Download as .html</div>
+          </div>
+          <div class="feat-badge">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M7 3V10M7 10L4.5 7.5M7 10L9.5 7.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </button>
+
+        <!-- Remove Overlays -->
+        <button class="feat-btn" id="removeOverlaysBtn" title="Remove modal popups, cookie banners, and scroll-blocking overlays">
+          <div class="feat-icon feat-icon-clean">
+            <svg viewBox="0 0 18 18" fill="none">
+              <rect x="2" y="2" width="14" height="14" rx="2" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M6 6L12 12M12 6L6 12" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="feat-text">
+            <div class="feat-title">Remove Overlays</div>
+            <div class="feat-desc">Strip modals & popups</div>
+          </div>
+          <div class="feat-badge">
+            <svg viewBox="0 0 14 14" fill="none"><path d="M4 7H10M10 7L7.5 4.5M10 7L7.5 9.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </button>
+      </section>
+
+      <!-- Status Toast (shared) -->
+      <div class="global-status" id="globalStatus"></div>
+
+      <!-- How it works -->
+      <section class="details-section">
+        <button class="details-trigger" id="detailsToggle" title="Learn how WebCopyyy works">
+          <span>Features guide</span>
+          <svg class="details-chevron" id="detailsChevron" viewBox="0 0 16 16" fill="none">
+            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="details-body" id="detailsBody">
+          <div class="details-list">
+            <div class="dl-item"><span class="dl-dot dl-unlock"></span><b>Unlock</b> — Strips copy/right-click restrictions</div>
+            <div class="dl-item"><span class="dl-dot dl-copy"></span><b>Copy Formatted</b> — Clipboard with headings, links, lists</div>
+            <div class="dl-item"><span class="dl-dot dl-docs"></span><b>Export to Docs</b> — Paste-ready Google Doc</div>
+            <div class="dl-item"><span class="dl-dot dl-save"></span><b>Save Page</b> — Full HTML with working links</div>
+            <div class="dl-item"><span class="dl-dot dl-clean"></span><b>Remove Overlays</b> — Kill modals, paywalls, banners</div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span class="footer-brand">reusRIFX</span>
+      </footer>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
